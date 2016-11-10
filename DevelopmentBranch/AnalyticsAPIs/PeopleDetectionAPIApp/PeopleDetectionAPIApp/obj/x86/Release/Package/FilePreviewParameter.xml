@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="PeopleDetectionAPIApp" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\bifurt\\Documents\\Visual\ Studio\ 2015\\Projects\\PeopleDetectionAPIApp\\PeopleDetectionAPIApp\\obj\\x86\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\bifurt\\Documents\\Visual\ Studio\ 2015\\Projects\\PeopleDetectionAPIApp\\PeopleDetectionAPIApp\\obj\\x86\\Release\\Package\\PackageTmp$" />
+  </parameter>
+</parameters>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="C:\Users\bifurt\Documents\Visual Studio 2015\Projects\PeopleDetectionAPIApp\PeopleDetectionAPIApp\obj\x86\Release\Package\PackageTmp" />
+  <setAcl path="C:\Users\bifurt\Documents\Visual Studio 2015\Projects\PeopleDetectionAPIApp\PeopleDetectionAPIApp\obj\x86\Release\Package\PackageTmp" setAclResourceType="Directory" />
+  <setAcl path="C:\Users\bifurt\Documents\Visual Studio 2015\Projects\PeopleDetectionAPIApp\PeopleDetectionAPIApp\obj\x86\Release\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
+</sitemanifest>

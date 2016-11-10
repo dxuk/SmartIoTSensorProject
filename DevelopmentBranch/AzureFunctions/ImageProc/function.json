@@ -1,0 +1,19 @@
+{
+  "bindings": [
+    {
+      "name": "myBlob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "images/{name}",
+      "connection": "camerablob_STORAGE"
+    },
+    {
+      "type": "eventHub",
+      "name": "outputEventHubMessage",
+      "path": "imageouthub",
+      "connection": "receiver",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}
