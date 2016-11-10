@@ -1,0 +1,1 @@
+C:\Users\paulfo\Documents\GitHub\Windows-universal-samples\Samples\CameraGetPreviewFrame\cs\CameraGetPreviewFrame.csproj;x86
