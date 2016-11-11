@@ -483,8 +483,9 @@ namespace CameraGetPreviewFrame
 
                     IBuffer c = await memStream.ReadAsync(buff,buff.Capacity,InputStreamOptions.None);
                     //WindowsRuntimeBufferExtensions.ToArray http://cctvapi.azurewebsites.net
-                    //await UploadImage("http://localhost:56407/Api/File/", buff.ToArray()) ;
-                    await UploadImage("http://cctvapi.azurewebsites.net/Api/File/", buff.ToArray());
+                    //await UploadImage("http://localhost:56407/Api/File/", buff.ToArray()) ; http://peopledetectionapiapp.azurewebsites.net/swagger/ui/index 
+                    //await UploadImage("http://cctvapi.azurewebsites.net/Api/File/", buff.ToArray());
+                    await UploadImage("http://peopledetectionapiapp.azurewebsites.net/swagger/ui/index", buff.ToArray());
                 }
                 catch (Exception err)
                 {
