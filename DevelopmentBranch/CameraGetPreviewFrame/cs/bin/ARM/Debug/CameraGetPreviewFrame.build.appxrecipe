@@ -10,19 +10,19 @@
     <PackageArchitecture>arm</PackageArchitecture>
     <PackageIdentityName>f3360ca9-cfb2-4383-b377-c02597f2e913</PackageIdentityName>
     <PackageIdentityPublisher>CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\paulfo\Documents\GitHub\Windows-universal-samples\Samples\CameraGetPreviewFrame\cs\obj\ARM\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\paulfo\Documents\GitHub\SmartIoTSensorProject\DevelopmentBranch\CameraGetPreviewFrame\cs\obj\ARM\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\paulfo\Documents\GitHub\Windows-universal-samples\Samples\CameraGetPreviewFrame\cs\bin\ARM\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\paulfo\Documents\GitHub\SmartIoTSensorProject\DevelopmentBranch\CameraGetPreviewFrame\cs\bin\ARM\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\paulfo\Documents\GitHub\Windows-universal-samples\Samples\CameraGetPreviewFrame\cs\bin\ARM\Debug\CameraGetPreviewFrame.exe">
+    <AppxPackagedFile Include="C:\Users\paulfo\Documents\GitHub\SmartIoTSensorProject\DevelopmentBranch\CameraGetPreviewFrame\cs\bin\ARM\Debug\CameraGetPreviewFrame.exe">
       <PackagePath>entrypoint\CameraGetPreviewFrame.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\paulfo\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
@@ -430,38 +430,41 @@
     <AppxPackagedFile Include="C:\Users\paulfo\.nuget\packages\WindowsAzure.Storage\7.2.1\lib\win8\Microsoft.WindowsAzure.Storage.dll">
       <PackagePath>Microsoft.WindowsAzure.Storage.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\paulfo\Documents\GitHub\Windows-universal-samples\SharedContent\cs\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\paulfo\Documents\GitHub\Windows-universal-samples\SharedContent\media\smalltile-sdk.png">
+    <AppxPackagedFile Include="C:\Users\paulfo\Documents\GitHub\SmartIoTSensorProject\DevelopmentBranch\CameraGetPreviewFrame\cs\Assets\smalltile-sdk.png">
       <PackagePath>Assets\smalltile-sdk.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\paulfo\Documents\GitHub\Windows-universal-samples\SharedContent\media\splash-sdk.png">
+    <AppxPackagedFile Include="C:\Users\paulfo\Documents\GitHub\SmartIoTSensorProject\DevelopmentBranch\CameraGetPreviewFrame\cs\Assets\splash-sdk.png">
       <PackagePath>Assets\splash-sdk.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\paulfo\Documents\GitHub\Windows-universal-samples\SharedContent\media\squaretile-sdk.png">
+    <AppxPackagedFile Include="C:\Users\paulfo\Documents\GitHub\SmartIoTSensorProject\DevelopmentBranch\CameraGetPreviewFrame\cs\Assets\squaretile-sdk.png">
       <PackagePath>Assets\squaretile-sdk.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\paulfo\Documents\GitHub\Windows-universal-samples\SharedContent\media\storelogo-sdk.png">
+    <AppxPackagedFile Include="C:\Users\paulfo\Documents\GitHub\SmartIoTSensorProject\DevelopmentBranch\CameraGetPreviewFrame\cs\Assets\storelogo-sdk.png">
       <PackagePath>Assets\storelogo-sdk.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\paulfo\Documents\GitHub\Windows-universal-samples\SharedContent\media\tile-sdk.png">
+    <AppxPackagedFile Include="C:\Users\paulfo\Documents\GitHub\SmartIoTSensorProject\DevelopmentBranch\CameraGetPreviewFrame\cs\Assets\tile-sdk.png">
       <PackagePath>Assets\tile-sdk.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\paulfo\Documents\GitHub\Windows-universal-samples\Samples\CameraGetPreviewFrame\cs\bin\ARM\Debug\CameraGetPreviewFrame.xr.xml">
+    <AppxPackagedFile Include="C:\Users\paulfo\Documents\GitHub\SmartIoTSensorProject\DevelopmentBranch\CameraGetPreviewFrame\cs\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulfo\Documents\GitHub\SmartIoTSensorProject\DevelopmentBranch\CameraGetPreviewFrame\cs\Properties\Library.rd.xml">
+      <PackagePath>Properties\Library.rd.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\paulfo\Documents\GitHub\SmartIoTSensorProject\DevelopmentBranch\CameraGetPreviewFrame\cs\bin\ARM\Debug\CameraGetPreviewFrame.xr.xml">
       <PackagePath>CameraGetPreviewFrame.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\paulfo\Documents\GitHub\Windows-universal-samples\Samples\CameraGetPreviewFrame\cs\bin\ARM\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\paulfo\Documents\GitHub\SmartIoTSensorProject\DevelopmentBranch\CameraGetPreviewFrame\cs\bin\ARM\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\paulfo\Documents\GitHub\Windows-universal-samples\Samples\CameraGetPreviewFrame\cs\bin\ARM\Debug\Core\CameraGetPreviewFrame.exe">
+    <AppxPackagedFile Include="C:\Users\paulfo\Documents\GitHub\SmartIoTSensorProject\DevelopmentBranch\CameraGetPreviewFrame\cs\bin\ARM\Debug\Core\CameraGetPreviewFrame.exe">
       <PackagePath>CameraGetPreviewFrame.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

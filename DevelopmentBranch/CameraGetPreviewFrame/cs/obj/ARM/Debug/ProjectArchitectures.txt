@@ -1,1 +1,1 @@
-C:\Users\paulfo\Documents\GitHub\Windows-universal-samples\Samples\CameraGetPreviewFrame\cs\CameraGetPreviewFrame.csproj;arm
+C:\Users\paulfo\Documents\GitHub\SmartIoTSensorProject\DevelopmentBranch\CameraGetPreviewFrame\cs\CameraGetPreviewFrame.csproj;arm

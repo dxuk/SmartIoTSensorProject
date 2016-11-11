@@ -19,12 +19,13 @@
   </Dependencies>
   <Resources>
     <Resource Language="EN-US" />
+    <Resource Language="CS" />
   </Resources>
   <Applications>
     <Application Id="App" Executable="CameraGetPreviewFrame.exe" EntryPoint="CameraGetPreviewFrame.App">
       <uap:VisualElements DisplayName="CameraGetPreviewFrame" Square150x150Logo="Assets\SquareTile-sdk.png" Square44x44Logo="Assets\SmallTile-sdk.png" Description="CameraGetPreviewFrame" BackgroundColor="#00b2f0">
         <uap:SplashScreen Image="Assets\Splash-sdk.png" />
-        <uap:DefaultTile>
+        <uap:DefaultTile ShortName="UWP Frame Camera">
           <uap:ShowNameOnTiles>
             <uap:ShowOn Tile="square150x150Logo" />
           </uap:ShowNameOnTiles>

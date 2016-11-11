@@ -1,8 +1,9 @@
 WinMetadata\Windows.winmd
-CameraGetPreviewFrame.xr.xml
-Properties\Default.rd.xml
 Assets\smalltile-sdk.png
 Assets\splash-sdk.png
 Assets\squaretile-sdk.png
 Assets\storelogo-sdk.png
 Assets\tile-sdk.png
+CameraGetPreviewFrame.xr.xml
+Properties\Default.rd.xml
+Properties\Library.rd.xml
