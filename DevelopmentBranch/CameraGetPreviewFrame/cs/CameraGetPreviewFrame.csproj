@@ -103,9 +103,7 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="..\..\..\SharedContent\cs\AssemblyInfo.cs">
-      <Link>Properties\AssemblyInfo.cs</Link>
-    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -130,25 +128,15 @@
     </SDKReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\..\SharedContent\cs\Default.rd.xml">
-      <Link>Properties\Default.rd.xml</Link>
-    </Content>
-    <Content Include="..\..\..\SharedContent\media\smalltile-sdk.png">
-      <Link>Assets\smalltile-sdk.png</Link>
-    </Content>
-    <Content Include="..\..\..\SharedContent\media\splash-sdk.png">
-      <Link>Assets\splash-sdk.png</Link>
-    </Content>
-    <Content Include="..\..\..\SharedContent\media\squaretile-sdk.png">
-      <Link>Assets\squaretile-sdk.png</Link>
-    </Content>
-    <Content Include="..\..\..\SharedContent\media\storelogo-sdk.png">
-      <Link>Assets\storelogo-sdk.png</Link>
-    </Content>
-    <Content Include="..\..\..\SharedContent\media\tile-sdk.png">
-      <Link>Assets\tile-sdk.png</Link>
-    </Content>
+    <Content Include="Assets\smalltile-sdk.png" />
+    <Content Include="Assets\splash-sdk.png" />
+    <Content Include="Assets\squaretile-sdk.png" />
+    <Content Include="Assets\storelogo-sdk.png" />
+    <Content Include="Assets\tile-sdk.png" />
+    <Content Include="Properties\Default.rd.xml" />
+    <Content Include="Properties\Library.rd.xml" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
