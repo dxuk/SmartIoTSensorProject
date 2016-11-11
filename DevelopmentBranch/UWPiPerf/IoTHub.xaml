@@ -1,0 +1,20 @@
+﻿<Page
+    x:Class="SDKTemplate.WiFiTestTools.IoTHub"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SDKTemplate"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel>
+            <TextBlock Style="{StaticResource BasicTextStyle}">Host Name</TextBlock>
+            <TextBox x:Name="tbHostName" TextChanged="tbHostName_TextChanged" ></TextBox>
+            <TextBlock Style="{StaticResource BasicTextStyle}">Device Id</TextBlock>
+            <TextBox x:Name="tbDeviceId" TextChanged="tbDeviceId_TextChanged"></TextBox>
+            <TextBlock Style="{StaticResource BasicTextStyle}">Shared Access Key</TextBlock>
+            <TextBox x:Name="tbSharedAccessKey" TextChanged="tbSharedAccessKey_TextChanged"></TextBox>
+        </StackPanel>
+    </Grid>
+</Page>

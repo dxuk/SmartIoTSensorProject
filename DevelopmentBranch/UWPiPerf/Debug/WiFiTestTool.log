@@ -1,0 +1,5 @@
+﻿  WiFiTestTool.vcxproj -> C:\Users\paulfo\Documents\GitHub\uwp-iperf3-1.1.5.0-source\UWPiPerf\Debug\WiFiTestTool\WiFiTestTool.exe
+  WiFiTestTool.vcxproj -> C:\Users\paulfo\Documents\GitHub\uwp-iperf3-1.1.5.0-source\UWPiPerf\Debug\WiFiTestTool\WiFiTestTool.pdb (Partial PDB)
+C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v14.0\AppxPackage\Microsoft.AppXPackage.Targets(1930,5): warning APPX0104: Certificate file 'WiFiTestTool_StoreKey.pfx' not found.
+C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v14.0\AppxPackage\Microsoft.AppXPackage.Targets(1930,5): warning APPX0102: A certificate with thumbprint '24C738994FB40933343423C131EFCBC25F783D53' that is specified in the project cannot be found in the certificate store. Please specify a valid thumbprint in the project file.
+C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v14.0\AppxPackage\Microsoft.AppXPackage.Targets(1930,5): warning APPX0107: The certificate specified is not valid for signing. For more information about valid certificates, see http://go.microsoft.com/fwlink/?LinkID=241478.

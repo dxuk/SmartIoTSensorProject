@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="App.xaml.cpp" />
+    <ClCompile Include="MainPage.xaml.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="Configuration.cpp" />
+    <ClCompile Include="WiFiServer.xaml.cpp" />
+    <ClCompile Include="WiFiClient.xaml.cpp" />
+    <ClCompile Include="src\Client.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\delay.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\error.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Extractor.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gettimeofday.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\inet_ntop.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\inet_pton.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Launch.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\List.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Listener.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Locale.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\obsd_getopt_long.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\obsd_getsubopt.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\obsd_strlcat.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\obsd_strlcpy.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PerfSocket.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ReportCSV.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ReportDefault.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Reporter.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Server.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Settings.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\signal.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\snprintf.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SocketAddr.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sockets.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stdio.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\string.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tcp_window_size.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Thread.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui_communication.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="azure_iot_hub.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="App.xaml.h" />
+    <ClInclude Include="MainPage.xaml.h" />
+    <ClInclude Include="Configuration.h" />
+    <ClInclude Include="WiFiServer.xaml.h" />
+    <ClInclude Include="WiFiClient.xaml.h" />
+    <ClInclude Include="src\Client.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Condition.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\delay.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Extractor.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gettimeofday.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\headers.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\inet_aton.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\List.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Listener.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Locale.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Mutex.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\obsd_getopt.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PerfSocket.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\queue.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\report_CSV.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\report_default.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Reporter.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Server.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Settings.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\snprintf.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SocketAddr.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thread.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Timestamp.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\version.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="socket_threads.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ui_communication.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="azure_iot_hub.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\smalltile-sdk.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\splash-sdk.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\squaretile-sdk.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\storelogo-sdk.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\tile-sdk.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\windows-sdk.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\microsoft-sdk.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\placeholder-sdk.png">
+      <Filter>Assets</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="MainPage.xaml" />
+    <Page Include="Styles.xaml" />
+    <Page Include="WiFiServer.xaml" />
+    <Page Include="WiFiClient.xaml" />
+    <Page Include="IoTHub.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Assets">
+      <UniqueIdentifier>{5e484d45-6123-44ff-80d2-caf983ceb393}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{ebbdc939-825a-488d-a2b6-a3c11d1ac2a0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="WiFiTestTool_TemporaryKey.pfx" />
+    <None Include="Package.StoreAssociation.xml" />
+    <None Include="WiFiTestTool_StoreKey.pfx" />
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>
