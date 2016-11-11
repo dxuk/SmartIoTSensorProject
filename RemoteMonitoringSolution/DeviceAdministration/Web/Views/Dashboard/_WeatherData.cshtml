@@ -1,0 +1,46 @@
+﻿@using GlobalResources
+<div class="dashboard_alert_history grid_container height_fixed">
+    <table id="currentWeatherTable" class="alert_history_table order-column">
+        <thead>
+            <tr>
+                <th>@Strings.Weather</th>
+                <th>@Strings.WindSpeed</th>
+                <th>@Strings.Temperature</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <br />
+    <table id="multiDayForecastTable" class="alert_history_table order-column">
+        <thead>
+            <tr>
+                <th>@Strings.Date</th>
+                <th>@Strings.Weather</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+<script src="~/Scripts/Views/Dashboard/CurrentWeather.js"></script>
+<script src="~/Scripts/Views/Dashboard/MultiDayForecast.js"></script>
+<script type="text/javascript">
+    (function () {
+        'use strict';
+
+        var currentWeatherTableSettings = {
+            dataTable: $('#currentWeatherTable'),
+            getDataUri: '/api/v1/telemetry/currentWeather',
+            refreshMilliseconds: 300000
+        };
+
+        var multiDayForecastTableSettings = {
+            dataTable: $('#multiDayForecastTable'),
+            getDataUri: '/api/v1/telemetry/multiDayForecast',
+            refreshMilliseconds: 300000
+        };
+
+        IoTApp.CurrentWeatherTable.init(currentWeatherTableSettings);
+
+        IoTApp.MultiDayForecastTable.init(multiDayForecastTableSettings);
+    })();
+</script>

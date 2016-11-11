@@ -807,13 +807,33 @@ namespace GlobalResources {
                 return ResourceManager.GetString("CurrentRatePlan", resourceCulture);
             }
         }
-        
+
+        /// <summary>
+        ///   Looks up a localized string similar to Current Weather: .
+        /// </summary>
+        public static string CurrentWeather
+        {
+            get
+            {
+                return ResourceManager.GetString("CurrentWeather", resourceCulture);
+            }
+        }
+
         /// <summary>
         ///   Looks up a localized string similar to Data Field.
         /// </summary>
         public static string DataFieldHeader {
             get {
                 return ResourceManager.GetString("DataFieldHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Date.
+        /// </summary>
+        public static string Date {
+            get {
+                return ResourceManager.GetString("Date", resourceCulture);
             }
         }
         
@@ -2310,7 +2330,18 @@ namespace GlobalResources {
                 return ResourceManager.GetString("Next", resourceCulture);
             }
         }
-        
+
+        /// <summary>
+        ///   Looks up a localized string similar to Next 10 Days.
+        /// </summary>
+        public static string Next10Days
+        {
+            get
+            {
+                return ResourceManager.GetString("Next10Days", resourceCulture);
+            }
+        }
+
         /// <summary>
         ///   Looks up a localized string similar to No action selected.
         /// </summary>
@@ -3417,7 +3448,18 @@ namespace GlobalResources {
                 return ResourceManager.GetString("UnableToRetrieveRuleFromService", resourceCulture);
             }
         }
-        
+
+        /// <summary>
+        ///   Looks up a localized string similar to Unable to retrieve weather data from service.
+        /// </summary>
+        public static string UnableToRetrieveWeatherDataFromService
+        {
+            get
+            {
+                return ResourceManager.GetString("UnableToRetrieveWeatherDataFromService", resourceCulture);
+            }
+        }
+
         /// <summary>
         ///   Looks up a localized string similar to Unknown command parameter type: &apos;{0}&apos;.
         /// </summary>
@@ -3523,6 +3565,24 @@ namespace GlobalResources {
         public static string ViewRules {
             get {
                 return ResourceManager.GetString("ViewRules", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Weather.
+        /// </summary>
+        public static string Weather {
+            get {
+                return ResourceManager.GetString("Weather", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Wind Speed.
+        /// </summary>
+        public static string WindSpeed {
+            get {
+                return ResourceManager.GetString("WindSpeed", resourceCulture);
             }
         }
         

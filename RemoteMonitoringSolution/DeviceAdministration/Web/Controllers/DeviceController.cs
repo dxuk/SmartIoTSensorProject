@@ -128,7 +128,7 @@ namespace Microsoft.Azure.Devices.Applications.RemoteMonitoring.DeviceAdmin.Web.
                 ModelState.Clear();
 
                 //assign a system generated device Id
-                model.DeviceId = Guid.NewGuid().ToString();
+                model.DeviceId = System.Guid.NewGuid().ToString();
 
                 //validate the model
                 isModelValid = TryValidateModel(model);

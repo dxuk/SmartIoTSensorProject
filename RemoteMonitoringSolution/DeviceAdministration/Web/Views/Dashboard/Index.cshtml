@@ -16,6 +16,8 @@
         active: '@Html.JavaScriptString(Strings.Active)',
         alarm: '@Html.JavaScriptString(Strings.Alarm)',
         alarmHistory: '@Html.JavaScriptString(Strings.AlarmHistory)',
+        currentWeather: '@Html.JavaScriptString(Strings.CurrentWeather)',
+        next10Days: '@Html.JavaScriptString(Strings.Next10Days)',
         allClearStatusIcon: '/Content/img/icon_status_all_clear.svg',
         cautionStatusIcon: '/Content/img/icon_status_caution.svg',
         closed: '@Html.JavaScriptString(Strings.Closed)',
@@ -26,12 +28,17 @@
         temperature: '@Html.JavaScriptString(Strings.Temperature)',
         alertHistoryType: '',
         unableToRetrieveAlertsHistoryFromService: '@Html.JavaScriptString(Strings.UnableToRetrieveAlertsHistoryFromService)',
-        unableToRetrieveDeviceTelemetryFromService: '@Html.JavaScriptString(Strings.UnableToRetrieveDeviceTelemetryFromService)'
+        unableToRetrieveDeviceTelemetryFromService: '@Html.JavaScriptString(Strings.UnableToRetrieveDeviceTelemetryFromService)',
+        unableToRetrieveWeatherDataFromService: '@Html.JavaScriptString(Strings.UnableToRetrieveWeatherDataFromService)'
     };
 </script>
 
 <div class="dashboard_content">
     <div class="dashboard_left_column">
+        @{ 
+            Html.RenderPartial("_WeatherData");
+        }
+        <br />
         @{
             Html.RenderPartial("_AlertHistory");
         }

@@ -1678,4 +1678,28 @@
     <value>Device Type</value>
     <comment>Dropdown option.</comment>
   </data>
+  <data name="Date" xml:space="preserve">
+    <value>Date</value>
+    <comment>Label.</comment>
+  </data>
+  <data name="Weather" xml:space="preserve">
+    <value>Weather</value>
+    <comment>Label.</comment>
+  </data>
+  <data name="WindSpeed" xml:space="preserve">
+    <value>Wind Speed</value>
+    <comment>Label.</comment>
+  </data>
+  <data name="CurrentWeather" xml:space="preserve">
+    <value>Current Weather</value>
+    <comment>Label.</comment>
+  </data>
+  <data name="Next10Days" xml:space="preserve">
+    <value>Next 10 Days</value>
+    <comment>Label.</comment>
+  </data>
+  <data name="UnableToRetrieveWeatherDataFromService" xml:space="preserve">
+    <value>Unable to retrieve weather data from service</value>
+    <comment>Error message.</comment>
+  </data>
 </root>

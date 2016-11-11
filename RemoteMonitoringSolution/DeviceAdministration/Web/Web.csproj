@@ -261,6 +261,7 @@
     <Reference Include="System.Web.Optimization">
       <HintPath>..\..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
     </Reference>
+    <Reference Include="System.XML" />
     <Reference Include="Validation">
       <HintPath>..\..\packages\Validation.2.2.8\lib\dotnet\Validation.dll</HintPath>
       <Private>True</Private>
@@ -302,6 +303,10 @@
     <Compile Include="Helpers\DeviceDisplayHelper.cs" />
     <Compile Include="Models\ActionPropertiesModel.cs" />
     <Compile Include="Models\AlertHistoryDeviceModel.cs" />
+    <Compile Include="Models\CurrentWeatherModel.cs" />
+    <Compile Include="Models\CurrentWeatherResultsModel.cs" />
+    <Compile Include="Models\DailyForecastModel.cs" />
+    <Compile Include="Models\DailyForecastResultsModel.cs" />
     <Compile Include="Models\EditDeviceRuleModel.cs" />
     <Compile Include="Models\LanguageModel.cs" />
     <Compile Include="Models\SimInformationViewModel.cs" />
@@ -324,6 +329,7 @@
     <Compile Include="Models\UpdateKeyModel.cs" />
     <Compile Include="Models\UpdateKeysModel.cs" />
     <Compile Include="Helpers\NavigationHelper.cs" />
+    <Compile Include="Models\WeatherModel.cs" />
     <Compile Include="Security\PrincipalHelper.cs" />
     <Compile Include="Security\Permission.cs" />
     <Compile Include="Security\PermsChecker.cs" />
@@ -491,8 +497,10 @@
     <Content Include="Scripts\Views\Dashboard\AlertHistory.js" />
     <Content Include="Scripts\Views\Dashboard\DashboardDevicePane.js" />
     <Content Include="Scripts\Views\Dashboard\MapPane.js" />
+    <Content Include="Scripts\Views\Dashboard\MultiDayForecast.js" />
     <Content Include="Scripts\Views\Dashboard\TelemetryHistory.js" />
     <Content Include="Scripts\Views\Dashboard\TelemetryHistorySummary.js" />
+    <Content Include="Scripts\Views\Dashboard\CurrentWeather.js" />
     <Content Include="Scripts\Views\DeviceCommand\DeviceCommandIndex.js" />
     <Content Include="Scripts\Views\DeviceRules\AllRulesAssigned.js" />
     <Content Include="Scripts\Views\DeviceRules\DeviceRuleProperties.js" />
@@ -630,6 +638,7 @@
     <Content Include="Views\Advanced\_SelectAdvancedProcess.cshtml" />
     <Content Include="Views\Shared\_NavigationSubmenu.cshtml" />
     <Content Include="Views\Advanced\_IccidAssociation.cshtml" />
+    <Content Include="Views\Dashboard\_WeatherData.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config">
@@ -687,9 +696,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="App_GlobalResources\Strings.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>Strings.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
       <CustomToolNamespace>GlobalResources</CustomToolNamespace>
+      <LastGenOutput>Strings1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="App_GlobalResources\Strings.ru.resx">
       <Generator>GlobalResourceProxyGenerator</Generator>

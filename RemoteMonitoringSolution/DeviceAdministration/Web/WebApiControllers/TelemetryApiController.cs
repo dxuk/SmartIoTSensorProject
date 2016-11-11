@@ -4,17 +4,23 @@ using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
-using Microsoft.Azure.Devices.Applications.RemoteMonitoring.Common.Exceptions;
 using Microsoft.Azure.Devices.Applications.RemoteMonitoring.DeviceAdmin.Infrastructure.BusinessLogic;
 using Microsoft.Azure.Devices.Applications.RemoteMonitoring.DeviceAdmin.Infrastructure.Models;
 using Microsoft.Azure.Devices.Applications.RemoteMonitoring.DeviceAdmin.Web.Models;
 using Microsoft.Azure.Devices.Applications.RemoteMonitoring.DeviceAdmin.Web.Security;
 using Microsoft.Azure.Devices.Applications.RemoteMonitoring.Common.Configurations;
 using GlobalResources;
-using Microsoft.Azure.Devices.Applications.RemoteMonitoring.Common.Helpers;
-using Microsoft.Azure.Devices.Applications.RemoteMonitoring.Common.Mapper;
 using Microsoft.Azure.Devices.Applications.RemoteMonitoring.Common.Models;
-using Microsoft.Azure.Devices.Applications.RemoteMonitoring.DeviceAdmin.Web.Helpers;
+
+using System.Text;
+using System.Net;
+using System.Web;
+using Newtonsoft.Json.Linq;
+
+using System.Runtime.Serialization;
+
+using System.Runtime.Serialization.Json;
+using System.IO;
 
 namespace Microsoft.Azure.Devices.Applications.RemoteMonitoring.DeviceAdmin.Web.WebApiControllers
 {
@@ -295,6 +301,83 @@ namespace Microsoft.Azure.Devices.Applications.RemoteMonitoring.DeviceAdmin.Web.
             return await GetServiceResponseAsync<AlertHistoryResultsModel>(loadHistoryItems, false);
         }
 
+        [HttpGet]
+        [Route("currentWeather")]
+        [WebApiRequirePermission(Permission.ViewTelemetry)]
+        public async Task<HttpResponseMessage> GetCurrentWeatherAsync()
+        {
+            Func<Task<CurrentWeatherResultsModel>> loadCurrentWeather =
+            async () =>
+            {
+                StringBuilder theWebAddress = new StringBuilder();
+                theWebAddress.Append("http://query.yahooapis.com/v1/public/yql?");
+                theWebAddress.Append("q=" + HttpUtility.UrlEncode("select * from weather.forecast where woeid in (select woeid from geo.places(1) where text='north greenwich')"));
+                theWebAddress.Append("&format=json");
+                theWebAddress.Append("&diagnostics=false");
+
+                string results = "";
+
+                using (WebClient wc = new WebClient())
+                {
+                    results = wc.DownloadString(theWebAddress.ToString());
+                }
+
+                WeatherModel weatherModel = Deserialize<WeatherModel>(results);
+
+                CurrentWeatherModel currentWeather = new CurrentWeatherModel()
+                {
+                    Weather = weatherModel.query.results.channel.item.condition.text,
+                    Temperature = weatherModel.query.results.channel.item.condition.temp + weatherModel.query.results.channel.units.temperature,
+                    WindSpeed = weatherModel.query.results.channel.wind.speed + weatherModel.query.results.channel.units.speed
+                };
+
+                var resultsModel = new CurrentWeatherResultsModel();
+                resultsModel.Data = new List<CurrentWeatherModel>();
+                resultsModel.Data.Add(currentWeather);
+
+                return resultsModel;
+            };
+
+            return await GetServiceResponseAsync<CurrentWeatherResultsModel>(loadCurrentWeather, false);
+        }
+
+        [HttpGet]
+        [Route("multiDayForecast")]
+        [WebApiRequirePermission(Permission.ViewTelemetry)]
+        public async Task<HttpResponseMessage> GetMultiDayForecastAsync()
+        {
+            Func<Task<DailyForecastResultsModel>> loadDailyForecast =
+            async () =>
+            {
+                StringBuilder theWebAddress = new StringBuilder();
+                theWebAddress.Append("http://query.yahooapis.com/v1/public/yql?");
+                theWebAddress.Append("q=" + HttpUtility.UrlEncode("select * from weather.forecast where woeid in (select woeid from geo.places(1) where text='north greenwich')"));
+                theWebAddress.Append("&format=json");
+                theWebAddress.Append("&diagnostics=false");
+
+                string results = "";
+
+                using (WebClient wc = new WebClient())
+                {
+                    results = wc.DownloadString(theWebAddress.ToString());
+                }
+
+                WeatherModel weatherModel = Deserialize<WeatherModel>(results);
+
+                var resultsModel = new DailyForecastResultsModel();
+                resultsModel.Data = new List<DailyForecastModel>();
+
+                foreach (var forecast in weatherModel.query.results.channel.item.forecast)
+                {
+                    resultsModel.Data.Add(new DailyForecastModel() { Date = forecast.date, Weather = forecast.text });
+                }
+
+                return resultsModel;
+            };
+
+            return await GetServiceResponseAsync<DailyForecastResultsModel>(loadDailyForecast, false);
+        }
+
         private async Task<List<DeviceModel>> LoadAllDevicesAsync()
         {
             var query = new DeviceListQuery()
@@ -351,6 +434,25 @@ namespace Microsoft.Azure.Devices.Applications.RemoteMonitoring.DeviceAdmin.Web.
                 });
                 return keySetting;
             }, false);
+        }
+
+        public static string Serialize<T>(T obj)
+        {
+            DataContractJsonSerializer serializer = new DataContractJsonSerializer(obj.GetType());
+            MemoryStream ms = new MemoryStream();
+            serializer.WriteObject(ms, obj);
+            string retVal = Encoding.UTF8.GetString(ms.ToArray());
+            return retVal;
+        }
+
+        public static T Deserialize<T>(string json)
+        {
+            T obj = Activator.CreateInstance<T>();
+            MemoryStream ms = new MemoryStream(Encoding.Unicode.GetBytes(json));
+            DataContractJsonSerializer serializer = new DataContractJsonSerializer(obj.GetType());
+            obj = (T)serializer.ReadObject(ms);
+            ms.Close();
+            return obj;
         }
     }
 }
