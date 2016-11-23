@@ -1,0 +1,78 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "aadTenant": {
+            "value": "95920f9f-9755-4e4e-b745-1409382821d5"
+        },
+        "aadInstance": {
+            "value": "https://login.microsoftonline.com/{0}"
+        },
+        "aadClientId": {
+            "value": "73ec6263-524a-4be4-8235-e48fdf368cd4"
+        },
+        "storageEndpointSuffix": {
+            "value": "core.windows.net"
+        },
+        "bingMapsLocation": {
+            "value": "westus"
+        },
+        "suiteName": {
+            "value": "remotemonitoringsol"
+        },
+        "docDBName": {
+            "value": "remotemonitoringsol"
+        },
+        "docDBSku": {
+            "value": "Standard"
+        },
+        "storageName": {
+            "value": "remotemonitoringsol"
+        },
+        "storageAccountSku": {
+            "value": "Standard_GRS"
+        },
+        "iotHubName": {
+            "value": "remotemonitoringsol"
+        },
+        "iotHubSku": {
+            "value": "S2"
+        },
+        "iotHubTier": {
+            "value": "Standard"
+        },
+        "ehName": {
+            "value": "remotemonitoringsol"
+        },
+        "ehSku": {
+            "value": 1
+        },
+        "packageUri": {
+            "value": "https://remotemonitoringsol.blob.core.windows.net/webdeploy/web.zip?sv=2015-04-05&sr=b&sig=KPUcEGlnmmd2yCeTbCzAC529bi8COcCZH0LuOa7Hpjg%3D&st=2016-11-11T11%3A47%3A24Z&se=2016-11-12T11%3A52%3A24Z&sp=r"
+        },
+        "webJobPackageUri": {
+            "value": "https://remotemonitoringsol.blob.core.windows.net/webdeploy/webjobhost.zip?sv=2015-04-05&sr=b&sig=X2KQzp%2FALBMw4M2fp0P%2Bjk4DLlTeZspUB5L8cCv4M5M%3D&st=2016-11-11T11%3A47%3A27Z&se=2016-11-12T11%3A52%3A27Z&sp=r"
+        },
+        "webSku": {
+            "value": "Premium"
+        },
+        "webWorkerSize": {
+            "value": 0
+        },
+        "webWorkerCount": {
+            "value": 2
+        },
+        "webJobSku": {
+            "value": "Standard"
+        },
+        "webJobWorkerSize": {
+            "value": 0
+        },
+        "webJobWorkerCount": {
+            "value": 2
+        },
+        "asaStartBehavior": {
+            "value": "JobStartTime"
+        }
+    }
+}
